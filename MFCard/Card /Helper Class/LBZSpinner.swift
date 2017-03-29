@@ -300,7 +300,9 @@ import UIKit
 
     // find usable superview
     fileprivate func findLastUsableSuperview() -> UIView {
-        return (window?.subviews[0])!
+       // return (window?.subviews[0])!
+        return (window?.subviews.last)!
+
     }
 
 
